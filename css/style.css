@@ -5497,6 +5497,7 @@ div.seo-text ul li {
   background-image: url(../img/academ-img/academ-banner.jpg);
   background-size: cover;
   background-position: 50% 50%;
+  background-attachment: fixed;
 }
 .a-header-wrap::after {
   content: "";
@@ -5610,11 +5611,16 @@ div.seo-text ul li {
 .prepod__img {
   display: inline-block;
   width: 100%;
+  max-width: 500px;
 }
 .prepod__item {
-  flex-basis: 50%;
+  flex-basis: 100%;
 }
+.prepod__item:first-child {
+  max-width: 500px;
+  align-self: center;
 
+}
 .prepod__text {
   margin-left: 2rem;
 }
@@ -5678,9 +5684,8 @@ div.seo-text ul li {
 }
 
 
-.js-car-flex__text {
-  margin-left: 1rem;
-  padding-right: 0.5rem;
+.js-car-flex__text {  
+  padding-left: 1rem;
   padding-top: 1rem;
   flex-basis: 100%;
 }
@@ -5717,8 +5722,10 @@ div.seo-text ul li {
 }
 
 .widget-menu__row {
+  position: relative;
   display: flex;
   width: 100%;
+  box-shadow: 0 4px 10px 1px  rgba(0, 0, 0, 0.205);
 }
 
 
@@ -5819,3 +5826,81 @@ div.seo-text ul li {
   }
 }
 /* aadvantages */
+
+
+/* scroll-up */
+
+
+.scroll-up {
+  position: fixed;
+  right: 50px;
+  bottom: 50px;
+  z-index: 1000;
+  width: 50px;
+  height: 50px;
+  color: rgba(13, 22, 99, 0.534);
+  cursor: pointer;
+  visibility: hidden;
+  border-radius: 50%;
+  -webkit-box-shadow: inset 0 0 0 2px #b11b2017;
+  box-shadow: inset 0 0 0 2px #b11b2017;
+  opacity: 0;
+  -webkit-transition: .25s;
+  transition: .25s;
+  -webkit-transform: translateY(25px);
+  transform: translateY(25px);
+}
+
+.scroll-up::before {
+  content: '↑';
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  font-size: 1rem;
+}
+
+.scroll-up:hover {
+  color: #0d1663;
+  -webkit-transform: translateY(-5%);
+  transform: translateY(-5%);
+}
+
+.scroll-up__path {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  fill: none;
+  stroke: #b11b20;
+  stroke-width: 2px;
+  -webkit-transform-origin: .2s;
+  transform-origin: .2s;
+}
+
+.scroll-up--active {
+  visibility: visible;
+  opacity: 1;
+  -webkit-transform: translateY(0);
+  transform: translateY(0);
+}
+
+@media (max-width: 425px) {
+  .scroll-up {
+      bottom: 25px;
+      right: 25px;
+  }
+
+  .vi_wcaio_mini_cart_sidebar_icon {
+      bottom: 25px !important;
+      left: 25px !important;
+  }
+}
