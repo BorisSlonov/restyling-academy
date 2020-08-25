@@ -5539,7 +5539,7 @@ div.seo-text ul li {
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.671);
 }
 .a-header__sub-title {
-  font-size: 1.4rem;
+  font-size: 1.75rem;
 }
 .a-header .main__btn {
   margin-top: 2rem;
@@ -5552,6 +5552,7 @@ div.seo-text ul li {
 }
 .a-header-btn-container span {
   text-transform: uppercase;
+  text-shadow: 1px 1px 2px rgb(0, 0, 0);
 }
 .a-header-btn-container .main__btn {
   margin-top: 0.5rem;
@@ -5642,13 +5643,16 @@ div.seo-text ul li {
 .prepod {
   display: flex;
   justify-content: space-between;
+  align-items: stretch;
   margin-top: 3rem;
 }
 
 .prepod__img {
   display: inline-block;
   width: 100%;
-  max-width: 500px;
+  max-width: 100%;
+  max-height: 500px;
+  object-fit: contain;
 }
 .prepod__item {
   flex-basis: 100%;
@@ -5658,7 +5662,6 @@ div.seo-text ul li {
   align-self: center;
 }
 .prepod__text {
-  margin-left: 2rem;
 }
 
 .prepod__descr {
@@ -5811,8 +5814,8 @@ div.seo-text ul li {
 /* present */
 .a-present {
   position: relative;
-  background-color: rgba(0, 0, 0, 0.77);
-  color: #fff;
+  box-shadow: 0 0 8px 1px rgba(204, 204, 204, 0.534);
+  color: #000;
   padding-bottom: 2rem;
   margin-top: 2rem;
 }
@@ -5829,17 +5832,7 @@ div.seo-text ul li {
   background-color: #fff;
 }
 
-.a-present::after {
-  content: '';
-  position: absolute;
-  bottom: -15px;
-  right: -20px;
-  z-index: 2;
-  transform: rotate(-45deg);
-  width: 40px;
-  height: 30px;
-  background-color: #fff;
-}
+
 
 
 .a-present-header {
@@ -5909,6 +5902,9 @@ div.seo-text ul li {
 .text-red {
   color: #ed1c24;
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+.text-red-without-shadow {
+  color: #ed1c24;
 }
 
 .a-present__sert {
@@ -6025,17 +6021,17 @@ div.seo-text ul li {
   align-items: center;
   padding: 3rem 0;
   text-align: center;
-  color: #fff;
 }
 
 .send-offer {
   width: 100%;
   padding-bottom: 2rem;
-  background-color: rgba(0, 0, 0, 0.74);
+  box-shadow: 0 5px 8px 1px #ccc;
 }
 
 .send-offer__title {
-  background-color: #000;
+  background-color: rgba(0, 0, 0, 0.926);
+  color: #fff;
   padding: 0.75rem 1rem;
   font-size: 2rem;
 }
