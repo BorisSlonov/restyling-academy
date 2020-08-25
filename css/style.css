@@ -5565,6 +5565,7 @@ div.seo-text ul li {
   }
   .a-header-wrap {
     background-image: url(../img/academ-img/academ-banner__mobile.jpg);
+    background-attachment: scroll;
   }
 }
 
