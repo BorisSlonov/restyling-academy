@@ -5563,7 +5563,7 @@ div.seo-text ul li {
     flex-direction: column;
     padding-top: 2.5rem;
   }
-  ..a-header-wrap {
+  .a-header-wrap {
     background-position: 90% 50%;
   }
 }
