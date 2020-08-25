@@ -6146,3 +6146,36 @@ div.seo-text ul li {
     left: 25px !important;
   }
 }
+
+.all-comfort-list {
+  margin: 5rem 0;
+  border-top: 4px solid #ed1c24;
+  max-width: 50%;
+  box-shadow: 0 0 8px 1px #ccc;
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+  padding-bottom: 1.5rem;
+}
+
+.all-comfort-flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.all-comfort-flex img {
+  display: block;
+  width: 100%;
+}
+.all-comfort-img-container {
+  width: 100%;
+  max-width: 45%;
+}
+@media(max-width:890px) {
+  .all-comfort-list  {
+    max-width: 100%;
+    width: 100%;
+  }
+  .all-comfort-img-container {
+    display: none;
+  }
+}
